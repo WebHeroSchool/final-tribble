@@ -1,0 +1,17 @@
+.body {
+  font-family: 'Gotham Pro', sans serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header__language {
+  position: absolute;
+  width: 18.06px;
+  height: 13px;
+}
+
+.box {
+  width: 930px;
+  height: 252.82px;
+  background-image: url('./Pictures/box background.png');
+}
