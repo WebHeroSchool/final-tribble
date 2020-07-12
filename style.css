@@ -4,11 +4,11 @@
   font-style: normal;
   margin: auto;
   width: 930px;
-  color: #000000;  
-  background: #ffffff;
+  color: #000;
+  background: #fff;
 }
 
-/*Header*/
+/* Header */
 
 .header {
   text-transform: uppercase;
@@ -36,8 +36,8 @@
 .navigation__link {
   font-size: 12px;
   font-weight: bold;
-  text-decoration: none; 
-  color: #000000;
+  text-decoration: none;
+  color: #000;
 }
 
 .navigation__link:hover {
@@ -81,10 +81,6 @@
   transform: scale(1.2);
 }
 
-.header__cart-button {
-
-}
-
 .header__number {
   width: 14px;
   height: 15px;
@@ -95,7 +91,7 @@
   color: #ffffff;
   border: none;
   border-radius: 50%;
-  background: #000000;
+  background: #000;
 }
 
 .header__number:hover {
@@ -125,14 +121,14 @@
   margin: 0 auto 67px;
   padding-left: 55px;
   background-image: url('./Pictures/box background.png');
- }
+}
 
 .box__title {
   font-size: 30px;
   line-height: 29px;
   padding-top: 47px;
   margin-bottom: 6px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .box__link {
@@ -153,5 +149,4 @@
   color: #ffffff;
 }
 
-
-/*First Section*/
+/* First Section */
