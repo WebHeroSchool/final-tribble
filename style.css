@@ -2,6 +2,7 @@
   font-family: 'Gotham Pro', sans-serif;
   font-weight: normal;
   font-style: normal;
+  letter-spacing: .5px;
   margin: auto;
   width: 930px;
   color: #000;
@@ -81,10 +82,15 @@
   transform: scale(1.2);
 }
 
+.header__cart-button {
+  display: inline-flex;
+  align-items: center;
+}
+
 .header__number {
   width: 14px;
   height: 15px;
-  margin-left: 2px;
+  margin-left: 5px;
   padding: 0;
   font-size: 10px;
   font-weight: bold;
@@ -118,7 +124,7 @@
 
 .box {
   height: 253px;
-  margin: 0 auto 67px;
+  margin: 0 auto 47px;
   padding-left: 55px;
   background-image: url('./Pictures/box background.png');
 }
@@ -150,3 +156,104 @@
 }
 
 /* First Section */
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__title {
+  width: 100%;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product__container {
+  width: 208px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__vector {
+  margin-bottom: 50px;
+}
+
+.product__img {
+  width: 170px;
+  height: 173px;
+  margin: 0 auto 16px;
+}
+
+.product__text {
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: .7px;
+  margin-bottom: 5px;
+  margin-left: 11px;
+}
+
+.product__price {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 11px;
+}
+
+.product__colorbox {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 11px;
+}
+
+.product__color {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+}
+
+.product__color:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.product__color_big {
+  width: 9px;
+  height: 9px;
+}
+
+.product__color_grey {
+  background: #c4c4c4;
+}
+
+.product__color_black {
+  background: #0e1211;
+}
+
+.product__color_camel {
+  background: #e29d69;
+}
+
+.product__color_blue {
+  background: #41479b;
+}
+
+.product__color_red {
+  background: #b62e3c;
+}
+
+.product__color_yellow {
+  background: #fdb431;
+}
+
+.product__color_bordo {
+  background: #762e31;
+}
