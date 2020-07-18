@@ -273,13 +273,13 @@
 
 @media (min-width: 1170px) {
   .body {
-    width: 88%;
+    width: 1030px;
   }
 
   .header__top {
-  height: 55px;
-  margin: 33px auto 8px;
-}
+    height: 55px;
+    margin: 33px auto 8px;
+  }
 
   .navigation {
     width: 343px;
@@ -462,7 +462,7 @@
 }
 
 @media (max-width: 685px) {
-  .product{
+  .product {
     justify-content: space-evenly;
   }
 }
@@ -580,7 +580,6 @@
 
   .product__text {
     padding-left: 7px;
-
   }
 
   .product__price {
