@@ -22,6 +22,7 @@
 .header__top {
   height: 55px;
   margin: 33px auto 21px;
+  padding: 0 5px;
   display: inline-flex;
   align-items: center;
 }
@@ -33,7 +34,7 @@
 
 .navigation {
   width: 333px;
-  margin-right: 141px;
+  margin-right: 131px;
   display: inline-flex;
   justify-content: space-between;
 }
@@ -270,6 +271,62 @@
 
 /* Media Queries */
 
+@media (min-width: 1170px) {
+  .body {
+    width: 88%;
+  }
+
+  .header__top {
+  height: 55px;
+  margin: 33px auto 8px;
+}
+
+  .navigation {
+    width: 343px;
+    margin-right: 185px;
+  }
+
+  .header__right-part {
+    width: 400px;
+  }
+
+  .header__search {
+    width: 179px;
+  }
+
+  .header__input {
+    width: 163px;
+  }
+
+  .box {
+    height: 280px;
+    padding-left: 60px;
+    margin: 0 auto 35px;
+    background-image: url('./Pictures/rob-potter-1170.svg');
+  }
+
+  .box__title {
+    padding-top: 59px;
+    margin-bottom: 12px;
+  }
+
+  .box__text {
+    margin-right: 2px;
+  }
+
+  .product__container {
+    width: 230px;
+  }
+
+  .product__vector {
+    margin-bottom: 55px;
+  }
+
+  .product__colorbox {
+    width: 55px;
+  }
+}
+
 @media (max-width: 768px) {
   .body {
     width: 100%;
@@ -348,6 +405,7 @@
 
   .product__title {
     font-size: 30px;
+    white-space: nowrap; 
     margin-bottom: 26px;
     margin-right: 26px;
   }
@@ -400,6 +458,12 @@
 
   .product__vector {
     display: none;
+  }
+}
+
+@media (max-width: 685px) {
+  .product{
+    justify-content: space-evenly;
   }
 }
 
@@ -496,5 +560,35 @@
   .product__smoke,
   .product__blue {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .top {
+    width: 88%;
+  }
+
+  .box {
+    padding-left: 19px;
+    margin-bottom: 22px;
+    background-image: url(Pictures/rob-potter-320.svg);
+  }
+
+  .product__img {
+    margin-bottom: 6px;
+  }
+
+  .product__text {
+    padding-left: 7px;
+
+  }
+
+  .product__price {
+    padding-left: 7px;
+  }
+
+  .product__colorbox {
+    height: 26px;
+    margin-right: -10px;
   }
 }
