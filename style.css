@@ -1,0 +1,593 @@
+.body {
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: .5px;
+  margin: auto;
+  width: 930px;
+  color: #000;
+  background: #fff;
+}
+
+/* Header */
+
+.header {
+  text-transform: uppercase;
+}
+
+.top {
+  display: none;
+}
+
+.header__top {
+  height: 55px;
+  margin: 33px auto 21px;
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 61px;
+  margin-right: 30px;
+}
+
+.navigation {
+  width: 333px;
+  margin-right: 131px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation__link:hover {
+  cursor: pointer;
+  text-shadow: 1px 2px 1px #b4b4b4;
+}
+
+.header__right-part {
+  width: 365px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__search {
+  height: 20px;
+  width: 161px;
+  border-bottom: 1px solid;
+}
+
+.header__input {
+  width: 147px;
+  outline: none;
+  border: none;
+}
+
+.header__submit {
+  position: absolute;
+  height: 20px;
+  width: 14px;
+  margin-right: 0;
+  background: url("Pictures/loop.svg") center no-repeat;
+  border: transparent;
+}
+
+.header__submit:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.header__cart-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__number {
+  width: 14px;
+  height: 15px;
+  margin-left: 5px;
+  padding: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  background: #000;
+}
+
+.header__number:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.header__button {
+  width: 18px;
+  height: 20px;
+  background-image: url("Pictures/united-states.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.box {
+  height: 253px;
+  margin: 0 auto 47px;
+  padding-left: 55px;
+  background-image: url('./Pictures/box background.png');
+}
+
+.box__title {
+  font-size: 30px;
+  line-height: 29px;
+  padding-top: 47px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.box__link {
+  text-decoration: none;
+}
+
+.box__link:hover {
+  cursor: pointer;
+  text-shadow: 1px 2px 1px #6d6d6d;
+}
+
+.box__text {
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.box__arrow_big {
+  display: none;
+}
+
+/* First Section */
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__title {
+  width: 100%;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product__container {
+  width: 208px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__vector {
+  margin-bottom: 50px;
+}
+
+.product__img {
+  width: 170px;
+  height: 173px;
+  margin: 0 auto 16px;
+}
+
+.product__text {
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: .7px;
+  padding-left: 11px;
+  margin-bottom: 5px;
+}
+
+.product__price {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 11px;
+}
+
+.product__colorbox {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 11px;
+}
+
+.product__color {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+}
+
+.product__color:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.product__color_big {
+  width: 9px;
+  height: 9px;
+}
+
+.product__color_grey {
+  background: #c4c4c4;
+}
+
+.product__color_black {
+  background: #0e1211;
+}
+
+.product__color_camel {
+  background: #e29d69;
+}
+
+.product__color_blue {
+  background: #41479b;
+}
+
+.product__color_red {
+  background: #b62e3c;
+}
+
+.product__color_yellow {
+  background: #fdb431;
+}
+
+.product__color_bordo {
+  background: #762e31;
+}
+
+/* Second Section */
+
+/* Media Queries */
+
+@media (min-width: 1170px) {
+  .body {
+    width: 1030px;
+  }
+
+  .header__top {
+    height: 55px;
+    margin: 33px auto 8px;
+  }
+
+  .navigation {
+    width: 343px;
+    margin-right: 185px;
+  }
+
+  .header__right-part {
+    width: 400px;
+  }
+
+  .header__search {
+    width: 179px;
+  }
+
+  .header__input {
+    width: 163px;
+  }
+
+  .box {
+    height: 280px;
+    padding-left: 60px;
+    margin: 0 auto 35px;
+    background-image: url('./Pictures/rob-potter-1170.svg');
+  }
+
+  .box__title {
+    padding-top: 59px;
+    margin-bottom: 12px;
+  }
+
+  .box__text {
+    margin-right: 2px;
+  }
+
+  .product__container {
+    width: 230px;
+  }
+
+  .product__vector {
+    margin-bottom: 55px;
+  }
+
+  .product__colorbox {
+    width: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 100%;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .top {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px auto 38px;
+  }
+
+  .top__logo {
+    width: 156px;
+    height: 34px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .menu__bar {
+    width: 61px;
+    height: 9px;
+    background: #000;
+  }
+
+  .menu__bar_top {
+    margin-bottom: 8px;
+  }
+
+  .box {
+    height: 415px;
+    padding-left: 43px;
+    margin-bottom: 44px;
+    background-image: url(Pictures/rob-potter-small.svg);
+  }
+
+  .box__title {
+    font-size: 50px;
+    line-height: 48px;
+    padding-top: 72px;
+    margin-bottom: 50px;
+  }
+
+  .box__text {
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  .box__arrow {
+    display: none;
+  }
+
+  .box__arrow_big {
+    display: inline-flex;
+  }
+
+  .product {
+    width: 82%;
+    margin: 0 auto 10px;
+  }
+
+  .product__title {
+    font-size: 30px;
+    white-space: nowrap;
+    margin-bottom: 26px;
+    margin-right: 26px;
+  }
+
+  .product__container {
+    width: 281px;
+  }
+
+  .product__img {
+    height: 232px;
+    width: 230px;
+    margin-bottom: 7px;
+  }
+
+  .product__text {
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 1.5px;
+    padding-left: 15px;
+    margin-bottom: 18px;
+  }
+
+  .product__price {
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    padding-left: 15px;
+  }
+
+  .product__colorbox {
+    width: 95px;
+    height: 20px;
+    margin-right: 0;
+  }
+
+  .product__colorbox_black {
+    margin-right: 15px;
+  }
+
+  .product__color,
+  .product__color_big {
+    height: 20px;
+    width: 20px;
+  }
+
+  .product__smoke,
+  .product__blue {
+    display: none;
+  }
+
+  .product__vector {
+    display: none;
+  }
+}
+
+@media (max-width: 685px) {
+  .product {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 375px) {
+  .top {
+    width: 75%;
+    margin: 24px auto 25px;
+  }
+
+  .top__logo {
+    width: 108px;
+    height: 22px;
+  }
+
+  .menu__bar {
+    width: 41px;
+    height: 6px;
+  }
+
+  .menu__bar_top {
+    margin-bottom: 5px;
+  }
+
+  .box {
+    height: 191px;
+    padding-left: 49px;
+    margin-bottom: 22px;
+    background-image: url(Pictures/rob-potter-smaller.svg);
+  }
+
+  .box__title {
+    font-size: 20px;
+    line-height: 19px;
+    padding-top: 47px;
+    margin-bottom: 14px;
+  }
+
+  .box__text {
+    font-size: 12px;
+    line-height: 11px;
+    margin-right: 4px;
+  }
+
+  .box__arrow {
+    display: inline-flex;
+  }
+
+  .box__arrow_big {
+    display: none;
+  }
+
+  .product__title {
+    font-size: 20px;
+    line-height: 19px;
+    margin-right: 11px;
+    margin-bottom: 0;
+  }
+
+  .product__container {
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__img {
+    width: 163px;
+    height: 160px;
+  }
+
+  .product__text {
+    font-size: 15px;
+    line-height: 14px;
+    padding-left: 16px;
+    margin-bottom: 3px;
+  }
+
+  .product__price {
+    font-size: 20px;
+    padding-left: 16px;
+  }
+
+  .product__colorbox {
+    width: 75px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .product__color {
+    width: 15px;
+    height: 15px;
+  }
+
+  .product__camel,
+  .product__smoke,
+  .product__blue {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .top {
+    width: 88%;
+  }
+
+  .box {
+    padding-left: 19px;
+    margin-bottom: 22px;
+    background-image: url(Pictures/rob-potter-320.svg);
+  }
+
+  .product__img {
+    margin-bottom: 6px;
+  }
+
+  .product__text {
+    padding-left: 7px;
+  }
+
+  .product__price {
+    padding-left: 7px;
+  }
+
+  .product__colorbox {
+    height: 26px;
+    margin-right: -10px;
+  }
+}

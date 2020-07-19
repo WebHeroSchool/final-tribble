@@ -2,57 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
     <title>
       Axion Shop
     </title>
-    <link rel="stylesheet" href="./fonts.css">
   </head>
   <body class="body">
     <header class="header">
-      <img class="header__logo">
-      <nav class="navigation">
-        <a class="navigation__link" href="#">
-          Shop
-        </a>
-        <a class="navigation__link" href="#" >
-          News
-        </a>
-        <a class="navigation__link" href="#">
-          Team
-        </a>
-        <a class="navigation__link" href="#">
-          Legacy
-        </a>
-        <a class="navigation__link" href="#">
-          Help
-        </a>
-      </nav>
-      <form class="header__search">
-        <input class="header__input">
-        <button class="header__submit">
-        </button>
-      </form>
-      <a class="navigation__link" href="#">
-        Sign in
-      </a>
-      <a class="navigation__link" href="#">
-        Cart
-      </a>
-      <button class="header__number">
-        1
-      </button>
-      <button class="header__button">
-        <img class="header__language" src="#">
-      </button>
+      <div class="header__top">
+        <img class="header__logo" src="Pictures/Axion-logo-1.svg">
+        <nav class="navigation">
+          <a class="navigation__link navigation__link_left" href="#">
+            Shop
+          </a>
+          <a class="navigation__link navigation__link_left" href="#" >
+            News
+          </a>
+          <a class="navigation__link navigation__link_left" href="#">
+            Team
+          </a>
+          <a class="navigation__link navigation__link_left" href="#">
+           Legacy
+          </a>
+          <a class="navigation__link navigation__link_left" href="#">
+            Help
+          </a>
+        </nav>
+        <div class="header__right-part">
+          <form class="header__search">
+            <input type ="search" class="header__input">
+            <button class="header__submit">
+            </button>
+          </form>
+          <a class="navigation__link" href="#">
+           Sign in
+          </a>
+          <div class="header__cart-button">
+            <a class="navigation__link" href="#">
+              Cart
+            </a>
+            <button class="header__number">
+             1
+            </button>
+          </div>
+          <button class="header__button">
+          </button>
+        </div>  
+      </div>
+      <div class="top">
+        <img src="Pictures/Axion-logo-small.svg" class="top__logo">
+        <div class="menu">
+          <div class="menu__bar menu__bar_top"></div>
+          <div class="menu__bar"></div>
+        </div>
+      </div>
       <div class="box">
         <h1 class="box__title">
-          Legendary Footwear Reborn.
+          <br class="box__title">Legendary
+          <br class="box__title">Footwear
+          <br class="box__title">Reborn.
         </h1>
         <a class="box__link" href="#">  
           <span class="box__text">
             Shop now
           </span>
-          <img src="#" class="box__arrow">
+          <img src="Pictures/Arrow.svg" class="box__arrow">
+          <img src="Pictures/Arrow big.svg" class="box__arrow_big">
         </a>
       </div>
     </header>  
@@ -60,63 +77,68 @@
       <h1 class="product__title">
         Featured Product
       </h1>
-      <div class="product__black">
-        <img class="product__img" src="#">
+      <div class="product__container product__black">
+        <img class="product__img" src="Pictures/black.svg">
         <p class="product__text">
           Atlas Black/Rasta Axion
         </p>
-        <p class="product__price">
+        <span class="product__price">
           $89.00
-        </p>
-        <div class="product__color product__color_grey"></div>
-        <div class="product__color product__color_big product__color_black"></div>
-        <div class="product__color product__color_red"></div>
-        <div class="product__color product__color_yellow"></div>
+        </span>
+        <div class="product__colorbox product__colorbox_black">
+          <div class="product__color product__color_grey"></div>
+          <div class="product__color product__color_big product__color_black"></div>
+          <div class="product__color product__color_red"></div>
+          <div class="product__color product__color_yellow"></div>
+        </div>  
       </div>
-        <div class="product__vector product__vector_left">
-        </div>
-      <div class="product__camel">
-        <img class="product__img" src="#">
+        <img class="product__vector" src="Pictures/Vector.svg">
+      <div class="product__container product__camel">
+        <img class="product__img" src="Pictures/camel.svg">
         <p class="product__text">
           Camel/Chili Pepper Axion
         </p>
-        <p class="product__price">
+        <span class="product__price">
           $74.00
-        </p>
-        <div class="product__color product__color_grey"></div>
-        <div class="product__color product__color_big product__color_camel"></div>
-        <div class="product__color product__color_red"></div>
-        <div class="product__color product__color_yellow"></div>
+        </span>
+        <div class="product__colorbox">
+          <div class="product__color product__color_grey"></div>
+          <div class="product__color product__color_big product__color_camel"></div>
+          <div class="product__color product__color_red"></div>
+          <div class="product__color product__color_yellow"></div>
+        </div>  
       </div>
-        <div class="product__vector product__vector_center">
-        </div>
-      <div class="prodict__smoke">
-        <img class="prodict__img" src="#">
+        <img class="product__vector" src="Pictures/Vector.svg">
+      <div class="product__container product__smoke">
+        <img class="product__img" src="Pictures/smoke.svg">
         <p class="product__text">
           Mandel Smoke/Rust Axion
         </p>
-        <p class="product__price">
+        <span class="product__price">
           $69.00
-        </p>
-        <div class="product__color product__color_grey"></div>
-        <div class="product__color product__color_big product__color_bordo"></div>
-        <div class="product__color product__color_blue"></div>
-        <div class="product__color product__color_yellow"></div>
+        </span>
+        <div class="product__colorbox">
+          <div class="product__color product__color_grey"></div>
+          <div class="product__color product__color_big product__color_bordo"></div>
+          <div class="product__color product__color_blue"></div>
+          <div class="product__color product__color_yellow"></div>
+        </div>  
       </div>
-        <div class="product__vector product vector_right">
-        </div>
-      <div class="product__blue">
-        <img class="product__img" src="#">
+        <img class="product__vector" src="Pictures/Vector.svg">
+      <div class="product__container product__blue">
+        <img class="product__img" src="Pictures/blue.svg">
         <p class="product__text">
           Cloud/Electric Blue Axion
         </p>
-        <p class="product__price">
+        <span class="product__price">
           $69.00
-        </p>
-        <div class="product__color product__color_grey"></div>
-        <div class="product__color product__color_big product__color_blue"></div>
-        <div class="product__color product__color_red"></div>
-        <div class="product__color product__color_yellow"></div>
+        </span>
+        <div class="product__colorbox">
+          <div class="product__color product__color_grey"></div>
+          <div class="product__color product__color_big product__color_blue"></div>
+          <div class="product__color product__color_red"></div>
+          <div class="product__color product__color_yellow"></div>
+        </div>  
       </div>
     </section>
     <section class="review">
@@ -126,14 +148,14 @@
         <h1 class="review__title">
           Legendary Footwear Reborn
         </h1>
-        <p class="review__text">
+        <span class="review__text">
           We are a brand with a history and are relaunching for 2019. We`ve been a part of the skater`s family ever since it`s early teenage years. And now we presentate a new footwear collection.
-        </p>
+        </span>
         <a class="review__link" href="#">
           <span class="review__ref">
             Learn more
           </span>
-          <img class="review__arrow" src="#">
+          <img class="review__arrow" src="Pictures/Arrow.svg">
         </a>
       </article>
     </section>
@@ -142,7 +164,7 @@
         Recent Stories
       </h1>
       <div class="stories__anagoa">
-        <img class="stories__img" src="#">
+        <img class="stories__img" src="">
         <h2 class="stories__title">
           Presents Justin Anagoa
         </h2>
@@ -160,7 +182,7 @@
         </p>
       </div>
       <div class="stories__reynolds">
-        <img class="stories__img" src="#">
+        <img class="stories__img" src="">
         <h2 class="stories__title">
           First Frontside flip
         </h2>
@@ -179,7 +201,7 @@
         </p>
       </div>
       <div class="stories__baekkel">
-        <img class="stories__img" src="#">
+        <img class="stories__img" src="">
         <h2 class="stories__title">
           Kevin Baekkel is Pro
         </h2>
@@ -202,25 +224,25 @@
         #AxionFootwear
       </h1>
       <div class="footwear__gallery">
-        <img class="gfootwear__img" src="#">
+        <img class="gfootwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
       <div class="footwear__gallery">
-        <img class="footwear__img" src="#">
+        <img class="footwear__img" src="">
       </div>
     </section>
     <footer class="footer">
@@ -308,26 +330,23 @@
         </button>
         <nav class="network-navigation">
           <a href="#" class="network-navigation__link">
-            <img class="network-navigation__icon" src="#">
+            <img class="network-navigation__icon" src="">
           </a>
           <a href="#" class="network-navigation__link">
-            <img class="network-navigation__icon" src="#">
+            <img class="network-navigation__icon" src="">
           </a>
           <a href="#" class="network-navigation__link">
-            <img class="network-navigation__icon" src="#">
+            <img class="network-navigation__icon" src="">
           </a>
           <a href="#" class="network-navigation__link">
-            <img class="network-navigation__icon" src="#">
+            <img class="network-navigation__icon" src="">
           </a>
         </nav>
       </section>
       <section class="footer__copyright">
-        <div class="footer__text">
+        <span class="footer__text">
           © 2019 Axion. All rights reserved.
-        </div>
-        <div class="footer__webhero">
-          Разработано в WebHero School
-        </div>
+        </span>
       </section>
     </footer>
   </body>
