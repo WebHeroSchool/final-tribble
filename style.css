@@ -273,6 +273,7 @@
 .review {
   display: inline-flex;
   background: #000;
+  margin-bottom: 73px;
 }
 
 .review__video {
@@ -350,9 +351,82 @@
   text-shadow: 1px 2px 1px #6d6d6d;
 }
 
+/* Third Section */
+
+.stories__heading {
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+
+.stories__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stories__box {
+  width: 277px;
+}
+
+.stories__img {
+  width: 277px;
+  height: 147px;
+  margin-bottom: 13px;
+}
+
+.stories__title {
+  font-size: 18px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.stories__text {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .6px;
+  vertical-align: top;
+}
+
+.stories__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.stories__link {
+  text-decoration: none;
+}
+
+.stories__link:hover {
+  cursor: pointer;
+  text-shadow: 1px 2px 1px #6d6d6d;
+}
+
+.stories__ref {
+  font-size: 12px;
+  line-height: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.stories__arrow {
+  margin-left: 0;
+}
+
+.stories__date {
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
 /* Media Queries */
 
-@media (min-width: 1170px) {
+/* @media (min-width: 1170px) {
   .body {
     width: 1030px;
   }
@@ -453,7 +527,7 @@
   .review__ref {
     margin-right: 4px;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .body {
