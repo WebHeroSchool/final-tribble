@@ -170,6 +170,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 77px;
 }
 
 .product__title {
@@ -269,6 +270,86 @@
 
 /* Second Section */
 
+.review {
+  display: inline-flex;
+  background: #000;
+}
+
+.review__video {
+  position: relative;
+  width: 579px;
+  height: 326px;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  padding-left: 30px; 
+  margin-right: 39px;
+}
+
+.review__background {
+  width: 579px;
+  height: 326px;
+}
+
+.review__button {
+  position: absolute;
+  top: 196px;
+  left: 294px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: url("Pictures/video-button.svg");
+}
+
+.review__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.review__collection {
+  width: 248px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 112px;
+  padding-right: 33px;
+  letter-spacing: .8px;
+  color: #fff;
+}
+
+.review__title {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.review__text {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: .7px;
+  margin-bottom: 9px;
+}
+
+.review__link {
+  text-decoration: none;
+}
+
+.review__ref {
+  font-size: 12px;
+  line-height: 11px;
+  font-weight: bold;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.review__link:hover {
+  cursor: pointer;
+  text-shadow: 1px 2px 1px #6d6d6d;
+}
+
 /* Media Queries */
 
 @media (min-width: 1170px) {
@@ -314,6 +395,10 @@
     margin-right: 2px;
   }
 
+  .product {
+    margin-bottom: 50px;
+  }
+
   .product__container {
     width: 230px;
   }
@@ -324,6 +409,49 @@
 
   .product__colorbox {
     width: 55px;
+  }
+
+  .review__video {
+    width: 644px;
+    height: 360px;
+    padding-top: 67px;
+    padding-bottom: 67px;
+    padding-left: 33px; 
+    margin-right: 43px;
+  }
+
+  .review__background {
+    width: 644px;
+    height: 360px;
+  }
+
+  .review__button {
+    width: 57px;
+    height: 57px;
+    top: 44%;
+    left: 48%;
+    background: url("Pictures/v-button1170.svg");
+  }
+
+  .review__collection {
+    width: 266px;
+    padding-top: 132px;
+    padding-right: 44px;
+    color: #fff;
+  }
+
+  .review__title {
+    margin-bottom: 13px;
+  }
+
+  .review__text {
+    font-size: 14px;
+    line-height: 17.5px;
+    margin-bottom: 16px;
+  }
+
+  .review__ref {
+    margin-right: 4px;
   }
 }
 
@@ -400,7 +528,7 @@
 
   .product {
     width: 82%;
-    margin: 0 auto 10px;
+    margin: 0 auto 81px;
   }
 
   .product__title {
@@ -459,6 +587,86 @@
   .product__vector {
     display: none;
   }
+
+  .review {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .review::before {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skewY(2.6deg);
+    transform-origin: 100% 0;
+    z-index: -1;
+  }
+
+  .review__collection {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+  }
+
+  .review__title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    padding-left: 33px;
+    margin-bottom: 14px;
+  }
+
+  .review__text {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: .9px;
+    padding-left: 35px;
+    margin-bottom: 32px;
+  }
+
+  .review__link {
+    display: none;
+  }
+
+  .review__video {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto 73px;
+    padding: 0;
+  }
+
+  .review__background {
+    width: 95%;
+    height: 95%;
+  }
+
+  .review__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;                       
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: url("Pictures/v-button768.svg") center no-repeat;
+  }
+
 }
 
 @media (max-width: 685px) {
@@ -523,7 +731,7 @@
   }
 
   .product__container {
-    margin: 0 auto 8px;
+    margin: 0 auto 6px;
     display: flex;
     justify-content: space-between;
   }
@@ -561,6 +769,42 @@
   .product__blue {
     display: none;
   }
+
+  .review__video {
+    width: 87%;
+    height: 87%;
+  }
+
+  .review__background {
+    width: 87%;
+    height: 87%;
+  }
+  
+  .review__button {
+    width: 30px;
+    height: 30px;
+    background: url("Pictures/vi button 375.png");
+  }
+
+  .review__collection {
+    padding-top: 5px;
+  }
+
+  .review__title {
+    width: 70%;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+  }
+
+  .review__text {
+    width: 295px;
+    font-size: 14px;
+    line-height: 17.5px;
+    letter-spacing: .7px;
+    margin-bottom: 27px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -589,5 +833,23 @@
   .product__colorbox {
     height: 26px;
     margin-right: -10px;
+  }
+
+  .review__collection {
+    padding-top: 4px;
+  }
+
+  .review__title {
+    width: 80%;
+  }
+
+  .review__video {
+    width: 94%;
+    height: 94%;
+  }
+
+  .review__background {
+    width: 94%;
+    height: 94%;
   }
 }
