@@ -463,7 +463,7 @@
   margin-left: -47px;
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding-top: 58px;
   padding-bottom: 30px;
   background: #000;
@@ -572,7 +572,7 @@
 
 /* Media Queries */
 
-/* @media (min-width: 1170px) {
+@media (min-width: 1170px) {
   .body {
     width: 1030px;
   }
@@ -631,6 +631,10 @@
     width: 55px;
   }
 
+  .review {
+    margin-bottom: 58px;
+  }
+
   .review__video {
     width: 644px;
     height: 360px;
@@ -673,7 +677,62 @@
   .review__ref {
     margin-right: 4px;
   }
-} */
+
+  .stories {
+    margin-bottom: 77px;
+  }
+
+  .stories__box {
+    width: 307px;
+  }
+
+  .stories__img {
+    width: 307px;
+  }
+
+  .stories__text {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+
+  .stories__wrap {
+    margin-top: 12px;
+  }
+
+  .stories__ref {
+    margin-right: 2px;
+  }
+
+  .stories__date {
+  display: flex;
+  align-items: center;
+  }
+
+  .footwear__img {
+    width: 148px;
+    height: 147px;
+    margin-right: -1.1px;
+  }
+
+  .footwear__container {
+    margin-bottom: 80px;
+  }
+  
+  .footer {
+    width: 113.5%;
+    margin-left: -70px; 
+  }
+
+  .footer__account {
+    margin-left: 200px;
+    margin-right: 43px;
+  }
+
+
+  .footer__signup {
+    margin-right: 194px;
+  }
+}
 
 @media (max-width: 768px) {
   .body {
