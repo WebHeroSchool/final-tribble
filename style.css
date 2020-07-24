@@ -704,8 +704,8 @@
   }
 
   .stories__date {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   .footwear__img {
@@ -717,17 +717,16 @@
   .footwear__container {
     margin-bottom: 80px;
   }
-  
+
   .footer {
     width: 113.5%;
-    margin-left: -70px; 
+    margin-left: -70px;
   }
 
   .footer__account {
     margin-left: 200px;
     margin-right: 43px;
   }
-
 
   .footer__signup {
     margin-right: 194px;
