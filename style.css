@@ -1040,12 +1040,6 @@
                   #fff 42%, #000 42%,
                   #000 100%
                   );
-                -o-linear-gradient(
-                  2.6deg,
-                  #fff 0%,
-                  #fff 42%, #000 42%,
-                  #000 100%
-                  );
                 linear-gradient(
                   2.6deg,
                   #fff 0%,
