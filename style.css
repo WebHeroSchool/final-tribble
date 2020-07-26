@@ -1031,29 +1031,16 @@
   }
 
   .footwear {
-    padding-top: 125px;
-    margin-bottom: 124px;
-    background: #000;
-
-    background: linear-gradient(
-                  2.6deg,
-                  #fff 0%,
-                  #fff 42%, #000 42%,
-                  #000 100%
-                  );
-    background: -webkit-linear-gradient(
-                  2.6deg,
-                  #fff 0%,
-                  #fff 42%, #000 42%,
-                  #000 100%
-                  );
-    background: -ms-linear-gradient(
-                  2.6deg,
-                  #fff 0%,
-                  #fff 42%, #000 42%,
-                  #000 100%
-                  );
-  } 
+     padding-top: 125px;
+     margin-bottom: 124px;
+     background: #000;
+     background:
+     -webkit-linear-gradient(2.6deg, #fff 0%, #fff 42%, #000 42%, #000 100%);
+     background:
+     -ms-linear-gradient(2.6deg, #fff 0%, #fff 42%, #000 42%, #000 100%);
+     background:
+     linear-gradient(2.6deg, #fff 0%, #fff 42%, #000 42%, #000 100%);
+   }
 
   .footwear__title {
     width: 88.5%;
