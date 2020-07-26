@@ -1038,14 +1038,6 @@
                   #fff 0%,
                   #fff 42%, #000 42%,
                   #000 100%);
-                -moz-linear-gradient(2.6deg,
-                  #fff 0%,
-                  #fff 50%, #000 50%,
-                  #000 100%);
-                -ms-linear-gradient(2.6deg,
-                  #fff 0%,
-                  #fff 50%, #000 50%,
-                  #000 100%);
   }
 
   .footwear__title {
