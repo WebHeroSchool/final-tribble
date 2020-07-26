@@ -1034,11 +1034,25 @@
     padding-top: 125px;
     margin-bottom: 124px;
     background: #000;
-    background: linear-gradient(2.6deg,
+    background: -webkit-linear-gradient(
+                  2.6deg,
                   #fff 0%,
                   #fff 42%, #000 42%,
-                  #000 100%);
-  }
+                  #000 100%
+                  );
+                -o-linear-gradient(
+                  2.6deg,
+                  #fff 0%,
+                  #fff 42%, #000 42%,
+                  #000 100%
+                  );
+                linear-gradient(
+                  2.6deg,
+                  #fff 0%,
+                  #fff 42%, #000 42%,
+                  #000 100%
+                  );
+  } 
 
   .footwear__title {
     width: 88.5%;
@@ -1054,7 +1068,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-rows: repeat(2, 170px);
-    grid-template-columns: repeat(4, 1fr);  
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .footwear__img {
@@ -1119,10 +1133,6 @@
 }
 
 @media (max-width: 685px) {
-  .product {
-    
-  }
-
   .stories__container {
     justify-content: space-evenly;
   }
@@ -1132,7 +1142,41 @@
   }
 
   .footwear__container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, 170px);
+    grid-template-columns: repeat(3, 170px);
+    justify-content: center;
+  }
+
+  .footwear__img {
+    height: 172px;
+    width: 172px;
+  }
+
+  .footwear__img_invisible,
+  .footwear__img_last {
+    display: none;
+  }
+
+  .footer {
+    justify-content: space-evenly;
+  }
+
+  .footer__title {
+    margin-right: 5px;
+  }
+
+  .footer__account {
+    margin-left: 15px;
+  }
+
+  .footer__company {
+    margin-bottom: 50px;
+  }
+
+  .footer__signup {
+    padding-top: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 
