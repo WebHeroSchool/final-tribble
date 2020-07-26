@@ -1042,6 +1042,14 @@
                   #fff 0%,
                   #fff 50%, #000 50%,
                   #000 100%);
+                -moz-linear-gradient(2.6deg,
+                  #fff 0%,
+                  #fff 50%, #000 50%,
+                  #000 100%);
+                -ms-linear-gradient(2.6deg,
+                  #fff 0%,
+                  #fff 50%, #000 50%,
+                  #000 100%);
   }
 
   .footwear__title {
@@ -1124,7 +1132,19 @@
 
 @media (max-width: 685px) {
   .product {
+    
+  }
+
+  .stories__container {
     justify-content: space-evenly;
+  }
+
+  .stories__anagoa {
+    margin-bottom: 50px;
+  }
+
+  .footwear__container {
+
   }
 }
 
