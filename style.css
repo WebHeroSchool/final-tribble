@@ -521,7 +521,7 @@
 
 .footer__link:hover {
   cursor: pointer;
-  text-shadow: 1px 2px 1px #6d6d6d;
+  text-shadow: 1px 2px 1px #f1f1f1;
 }
 
 .footer__text {
@@ -742,6 +742,17 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .review {
+    width: 100%;
+  }
+
+  .footer {
+   width: 100%;
+   margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .body {
     width: 100%;
@@ -815,7 +826,7 @@
 
   .product {
     width: 82%;
-    margin: 0 auto 81px;
+    margin: 0 auto;
   }
 
   .product__title {
@@ -876,29 +887,17 @@
   }
 
   .review {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    padding-top: 81px;
     margin-bottom: -1px;
     background: #000;
-  }
-
-  .review::before {
-    background: inherit;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: skewY(2.6deg);
-    transform-origin: 100% 0;
-    z-index: -1;
+    background: -webkit-linear-gradient(2.6deg, #000 0%, #000 88.5%, #fff 88.5%, #fff 100%);
+    background: -o-linear-gradient(2.6deg, #000 0%, #000 88.5%, #fff 88.5%, #fff 100%);
+    background: linear-gradient(2.6deg, #000 0%, #000 88.5%, #fff 88.5%, #fff 100%);
   }
 
   .review__collection {
@@ -971,6 +970,7 @@
   .stories__container {
     width: 88.5%;
     margin: 0 auto;
+    justify-content: space-between;
   }
 
   .stories__baekkel {
@@ -1052,14 +1052,17 @@
   .footwear__container {
     width: 88.5%;
     margin: 0 auto;
+    padding: 0;
     display: grid;
-    grid-template-rows: repeat(2, 170px);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 169px);
+    grid-template-columns: repeat(4, 169px);
+    justify-content: space-evenly;
   }
 
   .footwear__img {
     width: 171px;
     height: 171px;
+    justify-content: space-evenly;
   }
 
   .footwear__img_last {
@@ -1067,7 +1070,6 @@
   }
 
   .footer {
-    width: 100%;
     margin: 0;
     padding-top: 48px;
     padding-bottom: 30px;
@@ -1118,8 +1120,15 @@
   }
 }
 
+@media (max-width: 704px) {
+ .stories__container {
+    justify-content: space-evenly;
+  }
+}
+
 @media (max-width: 685px) {
-  .stories__container {
+  .product {
+    display: flex;
     justify-content: space-evenly;
   }
 
@@ -1166,7 +1175,30 @@
   }
 }
 
+@media (max-width: 514px) {
+  .footwear__title {
+    width: 337px;
+  }
+
+  .footwear__container {
+    margin: auto;
+    width: 337px;
+    grid-template-rows: repeat(3, 169px);
+    grid-template-columns: repeat(2, 169px);
+  }
+}
+
+@media (max-width: 391px) {
+  .review__collection {
+    width: 91%;
+}
+
+
 @media (max-width: 375px) {
+  .body {
+    width: 375px;
+  }
+
   .top {
     width: 75%;
     margin: 24px auto 25px;
@@ -1259,6 +1291,10 @@
   .product__smoke,
   .product__blue {
     display: none;
+  }
+
+  .review {
+    width: 100%;
   }
 
   .review__video {
