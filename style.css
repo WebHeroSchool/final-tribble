@@ -748,8 +748,8 @@
   }
 
   .footer {
-   width: 100%;
-   margin-left: 0;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -1121,7 +1121,7 @@
 }
 
 @media (max-width: 704px) {
- .stories__container {
+  .stories__container {
     justify-content: space-evenly;
   }
 }
@@ -1193,7 +1193,6 @@
     width: 91%;
   }
 }
-
 
 @media (max-width: 375px) {
   .body {
