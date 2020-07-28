@@ -1516,7 +1516,7 @@
   .box {
     padding-left: 19px;
     margin-bottom: 22px;
-    background-image: url(Pictures/rob-potter-320.svg);
+    background-image: url(Pictures/rob-potter-320.svg) no-repeat;
   }
 
   .product__img {
