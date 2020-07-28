@@ -355,6 +355,7 @@
 
 .stories {
   margin-bottom: 87px;
+  padding: 0 5px;
 }
 
 .stories__heading {
@@ -1120,9 +1121,13 @@
   }
 }
 
-@media (max-width: 704px) {
+@media (max-width: 714px) {
   .stories__container {
     justify-content: space-evenly;
+  }
+  
+  .stories__anagoa {
+    margin-bottom: 50px;
   }
 }
 
@@ -1130,10 +1135,6 @@
   .product {
     display: flex;
     justify-content: space-evenly;
-  }
-
-  .stories__anagoa {
-    margin-bottom: 50px;
   }
 
   .footwear__container {
