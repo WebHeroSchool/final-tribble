@@ -13,3 +13,11 @@
     url('./Fonts/GothamPro-Bold.woff2') format('woff2');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: 'Gotham Pro', sans-serif;
+  src:
+    url('./Fonts/GothamPro-Light.woff') format('woff'),
+    url('./Fonts/GothamPro-Light.woff2') format('woff2');
+  font-weight: lighter;
+}
